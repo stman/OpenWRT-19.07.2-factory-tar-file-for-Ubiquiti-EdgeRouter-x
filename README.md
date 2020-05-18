@@ -14,3 +14,7 @@ Once the router under the original EdgeOS is updated with this temporary custom 
 The following instructions should allow you to apply these custom compilation settings if you intend to compile your own tar image.  
 
 I also provide a copy of my own operational custom 19.07 factory image tar file for those who are lazy at recompiling it themselves. You will also find my menuconfig ".config" configuration file (named "dot.config" on my repository, you will have to rename it manualy ".config"), so that you can copy/past it into your "/openwrt" directory so that "make menuconfig" becomes unnecessary, and directly compile the target with "make -jXXX" (XXX being the number of core/thread of your processor, to speed up compilation) exactly what options were disabled to reproduce this "short receipt".
+
+---
+
+I will update this post tomorrow with the detailed compilation instructions on Debian/Ubuntu for those hwo are not familiar with compiling their own OpenWRT target images.
