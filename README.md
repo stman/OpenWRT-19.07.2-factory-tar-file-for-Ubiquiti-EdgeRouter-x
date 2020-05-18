@@ -1,5 +1,5 @@
 # OpenWRT 19.07.2 Factory Tar file, generation and installation for Ubiquiti EdgeRouter X
-  #1  
+  
   
 There was an issue with installing OpenWRT 19.07.2 on the Ubiquiti EdgeRouter X : The new distribution build did not come automaticaly with the usual "openwrt-19.07.2-ramips-mt7621-ubnt-erx-initramfs-factory.tar" file that allow installing OpenWRT on top of EdgeOS to replace it with the router.
 
@@ -13,4 +13,4 @@ Once the router under the original EdgeOS is updated with this temporary custom 
 
 The following instructions should allow you to apply these custom compilation settings if you intend to compile your own tar image.  
 
-I also provide a copy of my own operational custom 19.07 factory image tar file for those who are lazy at recompiling it themselves. You will also find the menuconfig ".config" file, so that you can see exactly what options were disabled to produce this "short receipt".
+I also provide a copy of my own operational custom 19.07 factory image tar file for those who are lazy at recompiling it themselves. You will also find the menuconfig ".config" file (named dot.config), so that you can copy/past it into your "/openwrt" directory so that "make menuconfig" becomes unnecessary, and directly compile the target with "make -jXXX" (XXX being the number of core/thread of your processor, to speed up compilation) exactly what options were disabled to produce this "short receipt".
