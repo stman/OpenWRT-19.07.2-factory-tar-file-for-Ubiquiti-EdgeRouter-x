@@ -1,7 +1,7 @@
 # OpenWRT 19.07.2 Factory Tar file, generation and installation for Ubiquiti EdgeRouter X
   
   
-There was an issue with installing OpenWRT 19.07.2 on the Ubiquiti EdgeRouter X : The new distribution build did not come automaticaly with the usual "openwrt-19.07.2-ramips-mt7621-ubnt-erx-initramfs-factory.tar" file that allow installing OpenWRT on top of EdgeOS to replace it with the router.
+There was an issue with installing OpenWRT 19.07.2 on the Ubiquiti EdgeRouter X : The new distribution build did not come automaticaly with the usual "openwrt-19.07.2-ramips-mt7621-ubnt-erx-initramfs-factory.tar" file that allow installing OpenWRT on top of EdgeOS to replace it by OpenWRT within the router.
 
 Using older versions like "openwrt-18.06-ramips-mt7621-ubnt-erx-initramfs-factory.tar" to reflash the router, and then apply a sysupgrade command with the "openwrt-19.07.2-ramips-mt7621-ubnt-erx-squashfs-sysupgrade.bin" file was not working either, no matter what version of EdgeOS you had factory installed on the router.
 
