@@ -17,4 +17,78 @@ I also provide a copy of my own operational custom 19.07 factory image tar file 
 
 ---
 
-I will update this post tomorrow with the detailed compilation instructions on Debian/Ubuntu for those hwo are not familiar with compiling their own OpenWRT target images.
+Here is the detailed procedure to compile an equivalent operational "short receipt" Tar factory image as I have been doing in my previous post.
+
+These things where done under Xubuntu 18.04.2 : 
+
+Open a terminal.
+
+Then type the following commands (One of them related to feeds install is doubled because some errors happen on the first launch):
+
+> sudo apt-get update
+> sudo apt-get install subversion g++ zlib1g-dev build-essential git python python3 python3-distutils libncurses5-dev gawk gettext unzip file libssl-dev wget libelf-dev ecj fastjar java-propose-classpath libldap2-dev libcap-dev libidn2-dev liblzma-dev libjansson-dev libpam-dev
+> git clone https://www.github.com/openwrt/openwrt -b openwrt-19.07
+> cd openwrt
+> ./scripts/feeds update -a
+> ./scripts/feeds install -a
+> ./scripts/feeds install -a
+> make menuconfig
+
+Now, from the menuconfig main screen,
+
+- Set **Target System** to : **MediaTek Ralink MIPS**
+- Set **Subtarget** to : **MT7621 based board**
+- Set **Target Profile** to : **Ubiquiti EdgeRouter X**
+
+Then select **Save** and accept to save the configuration under the proposed default filename **.config** and then select **Exit** until you quit the menuconfig utility and are back to the terminal bash prompt.
+
+From here, enter the following bash commands : 
+
+> make defconfig
+> make menuconfig
+
+Go into **Global Build Options** submenu, and then : 
+
+- Set **Strip unnecessary export from the kernel image** to *
+- Set **Strip unnecessary functions from libraries** to *
+ 
+From this screen, enter the submenu **Kernel build options** and then : 
+
+- Unset **Compile the kernel with debug filesystem enabled**
+- Unset **Compile the kernel with symbol table information**
+- Unset **Compile the kernel with debug information**
+
+Then select **Exit** until you back reach the menuconfig main screen, then select **Save** , it will propose you to save the configuration under the default filename **.config** , accept it, and then select **Exit** until you are back to the terminal bash prompt.
+
+Back to the terminal bash prompt, enter the following commands : 
+
+> make download
+> make -jXXX
+
+For the last command above please replace XXX by the number of processor cores your computer has. In my case, I used the command **make -j8** because I have an 8 cores computer. If you ignore how many cores your microprocessor has, please just type **make** alone.
+
+The compilation should take about 10 minutes with 8 cores.
+Once it is finished, enter the following bash commands : 
+
+> cd ./bin/targets/ramips/mt7621
+> ls -al 
+
+And you should see the following files : 
+
+> user@PC:~/openwrt/bin/targets/ramips/mt7621$ ls -al
+> total 8684
+> drwxr-xr-x 3 user user    4096 mai   18 14:01 .
+> drwxr-xr-x 3 user user    4096 mai   18 13:55 ..
+> -rw-r--r-- 1 user user     335 mai   18 13:55 config.buildinfo
+> -rw-r--r-- 1 user user     263 mai   18 13:55 feeds.buildinfo
+> -rw-r--r-- 1 user user    1880 mai   18 14:01 openwrt-ramips-mt7621-device-ubnt-erx.manifest
+> -rw-r--r-- 1 user user 2938880 mai   18 14:01 openwrt-ramips-mt7621-ubnt-erx-initramfs-factory.tar
+> -rw-r--r-- 1 user user 2923299 mai   18 14:01 openwrt-ramips-mt7621-ubnt-erx-initramfs-kernel.bin
+> -rw-r--r-- 1 user user 2990868 mai   18 14:01 openwrt-ramips-mt7621-ubnt-erx-squashfs-sysupgrade.bin
+> drwxr-xr-x 2 user user    4096 mai   18 14:01 packages
+> -rw-r--r-- 1 user user     720 mai   18 14:01 sha256sums
+> -rw-r--r-- 1 user user      18 mai   18 13:55 version.buildinfo
+
+As you can see, there is an **openwrt-ramips-mt7621-ubnt-erx-initramfs-factory.tar** that was generated. Use this file to update your router from EdgeOS with usual procedures.
+
+Then, update again the router under this temporary OpenWRT 19.07 built with the official stock sysupgrade 19.07.2 bin file from the OpenWRT website, and you're done. 
