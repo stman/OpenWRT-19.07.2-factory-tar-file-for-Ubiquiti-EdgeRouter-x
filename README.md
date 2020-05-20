@@ -25,7 +25,7 @@ Open a terminal.
 
 Then type the following commands (One of them related to feeds install is doubled because some errors happen on the first launch):
 
-```sudo apt-get update
+<code>sudo apt-get update
 
 sudo apt-get install subversion g++ zlib1g-dev build-essential git python python3 python3-distutils libncurses5-dev gawk gettext unzip file libssl-dev wget libelf-dev ecj fastjar java-propose-classpath libldap2-dev libcap-dev libidn2-dev liblzma-dev libjansson-dev libpam-dev
 
@@ -39,7 +39,7 @@ cd openwrt
 
 ./scripts/feeds install -a
 
-make menuconfig```
+make menuconfig</code>
 
 Now, from the menuconfig main screen,
 
