@@ -46,10 +46,10 @@ Then select **Save** and accept to save the configuration under the proposed def
 
 From here, enter the following bash commands : 
 
-<code>
+```
 make defconfig
 make menuconfig
-</code>
+```
 
 Go into **Global Build Options** submenu, and then : 
 
@@ -66,24 +66,24 @@ Then select **Exit** until you back reach the menuconfig main screen, then selec
 
 Back to the terminal bash prompt, enter the following commands : 
 
-<code>
+```
 make download
 make -jXXX
-</code>
+```
 
 For the last command above please replace XXX by the number of processor cores your computer has. In my case, I used the command **make -j8** because I have an 8 cores computer. If you ignore how many cores your microprocessor has, please just type **make** alone.
 
 The compilation should take about 10 minutes with 8 cores.
 Once it is finished, enter the following bash commands : 
 
-<code>
+```
 cd ./bin/targets/ramips/mt7621
 ls -al
-</code>
+```
 
 And you should see the following files : 
 
-<code>
+```
 user@PC:~/openwrt/bin/targets/ramips/mt7621$ ls -al
 total 8684
 drwxr-xr-x 3 user user    4096 mai   18 14:01 .
@@ -97,7 +97,7 @@ drwxr-xr-x 3 user user    4096 mai   18 13:55 ..
 drwxr-xr-x 2 user user    4096 mai   18 14:01 packages
 -rw-r--r-- 1 user user     720 mai   18 14:01 sha256sums
 -rw-r--r-- 1 user user      18 mai   18 13:55 version.buildinfo
-</code>
+```
 
 As you can see, there is an **openwrt-ramips-mt7621-ubnt-erx-initramfs-factory.tar** that was generated. Use this file to update your router from EdgeOS with usual procedures.
 
