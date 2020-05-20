@@ -25,25 +25,16 @@ Open a terminal.
 
 Then type the following commands (One of them related to feeds install is doubled because some errors happen on the first launch):
 
-<code>
-
+```
 sudo apt-get update
-  
 sudo apt-get install subversion g++ zlib1g-dev build-essential git python python3 python3-distutils libncurses5-dev gawk gettext unzip file libssl-dev wget libelf-dev ecj fastjar java-propose-classpath libldap2-dev libcap-dev libidn2-dev liblzma-dev libjansson-dev libpam-dev
-
 git clone https://www.github.com/openwrt/openwrt -b openwrt-19.07
-
 cd openwrt
-
 ./scripts/feeds update -a
-
 ./scripts/feeds install -a
-
 ./scripts/feeds install -a
-
 make menuconfig
-
-</code>
+```
 
 Now, from the menuconfig main screen,
 
