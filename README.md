@@ -9,7 +9,7 @@ The reason why the new built doesn't come with the usual **factory tar file**, b
 
 I have changed a few compilation option so that the make file can finally generate a custom 19.07 built that fits the correct kernel partition size and therefore generate a usable tar file.
 
-Once the router under the original EdgeOS is updated with this temporary custom OpenWRT built, you can sysupgrade it with the "Official OpenWRT stock" **openwrt-19.07.2-ramips-mt7621-ubnt-erx-squashfs-sysupgrade.bin** so that your router goes with OpenWRT "stock official images" ensuring all the repositories and further sysupgrade of this distribution will work as desired.
+Once the router under the original EdgeOS is updated with this temporary custom OpenWRT built, you can sysupgrade it with the "Official OpenWRT stock" **openwrt-19.07.2-ramips-mt7621-ubnt-erx-squashfs-sysupgrade.bin** so that your router works with OpenWRT "stock official images" ensuring all the repositories and further sysupgrade of this distribution will work as desired.
 
 The following instructions should allow you to apply these custom compilation settings if you intend to compile your own tar image.  
 
