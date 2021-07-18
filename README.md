@@ -102,3 +102,7 @@ drwxr-xr-x 2 user user    4096 mai   18 14:01 packages
 As you can see, there is an **openwrt-ramips-mt7621-ubnt-erx-initramfs-factory.tar** that was generated. Use this file to update your router from EdgeOS with usual procedures.
 
 Then, update again the router under this temporary OpenWRT 19.07 built with the official stock sysupgrade 19.07.2 bin file from the OpenWRT website, and you're done. 
+
+NEW Update :
+
+This procedure also works for OpenWrt 21.02 , changing 19.07 by 21.02 in relevant commands.
