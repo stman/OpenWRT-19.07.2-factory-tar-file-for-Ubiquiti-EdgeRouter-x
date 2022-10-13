@@ -105,4 +105,4 @@ Then, update again the router under this temporary OpenWRT 19.07 built with the 
 
 NEW Update :
 
-This procedure doesn't work for OpenWrt 21.02, it works only for 19.07 series. There are some indications posted by another user on the issue tab of this page, to be able to do the build for 21.02. I will update this paragraph soon as long as it works for me too with 21.02.
+This procedure doesn't work for OpenWrt 21.02, it works only for 19.07 series. There are some indications posted by another user on the issue tab of this page, to be able to do the build for 21.02 ( Get his menuconfig.txt file to create the build, available here : https://github.com/cyounkins/edgerouter-factory ). I will update this paragraph soon as long as it works for me too with 21.02.
