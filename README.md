@@ -7,7 +7,7 @@ Using older versions like **openwrt-18.06-ramips-mt7621-ubnt-erx-initramfs-facto
 
 The reason why the new built doesn't come with the usual **factory tar file**, but with an unusable **bin file** instead is that the kernel image of this new distribution is too big of a few 200 Kb to fit into the kernel image partition. The make file to make the built has an embedded simple security mecanism to prevent generating incorrect tar file if the kernel is too big, it generates an unusable bin file instead.
 
-I have changed a few compilation option so that the make file can finaly generate a custom 19.07 built that fits the correct kernel partition size and therefore generate a usable tar file.
+I have changed a few compilation options so that the make file can finaly generate a custom 19.07 built that fits the correct kernel partition size and therefore generate a usable tar file.
 
 Once the router under the original EdgeOS is updated with this temporary custom OpenWRT built, you can sysupgrade it with the "Official OpenWRT stock" **openwrt-19.07.2-ramips-mt7621-ubnt-erx-squashfs-sysupgrade.bin** so that your router goes with OpenWRT "stock official images" ensuring all the repositories and further sysupgrade of this distribution will work as desired.
 
@@ -105,4 +105,4 @@ Then, update again the router under this temporary OpenWRT 19.07 built with the 
 
 NEW Update :
 
-This procedure also works for OpenWrt 21.02 , changing 19.07 by 21.02 in relevant commands.
+This procedure doesn't work for OpenWrt 21.02, it works only for 19.07 series. There are some indications posted by another user on the issue tab of this page, to be able to do the build for 21.02. I will update this paragraph soon as long as it works for me too with 21.02.
