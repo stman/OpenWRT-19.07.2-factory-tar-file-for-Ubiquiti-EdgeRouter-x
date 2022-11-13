@@ -109,7 +109,7 @@ These things where done under Xubuntu 20.04.2 :
 
 Open a terminal.
 
-Then type the following commands (One of them related to feeds install is doubled because some errors happen on the first launch):
+Then type the following commands (Change "-b openwrt-21.02" to "-b openwrt-22.03" to compile the 22.03 version):
 
 ```
 sudo apt-get update
