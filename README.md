@@ -105,6 +105,8 @@ Then, update again the router under this temporary OpenWRT 19.07 built with the 
 
 # OpenWRT 21.02 and 22.03 Factory Tar file, generation and installation for Ubiquiti EdgeRouter X
 
+The following procedure is still not working, I'm on it, it should work fine soon. I need to contact another folk to finish it.
+
 These things where done under Xubuntu 20.04.2 : 
 
 Open a terminal.
