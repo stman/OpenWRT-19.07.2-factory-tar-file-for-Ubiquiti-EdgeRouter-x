@@ -118,7 +118,7 @@ git clone https://www.github.com/openwrt/openwrt -b openwrt-21.02
 cd openwrt
 ./scripts/feeds update -a
 ./scripts/feeds install -a
-wget https://github.com/stman/OpenWRT-19.07.2-factory-tar-file-for-Ubiquiti-EdgeRouter-x/blob/master/menuconfig.txt
+wget https://raw.githubusercontent.com/stman/OpenWRT-19.07.2-factory-tar-file-for-Ubiquiti-EdgeRouter-x/master/menuconfig.txt
 make menuconfig
 ```
 
