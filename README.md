@@ -118,7 +118,6 @@ git clone https://www.github.com/openwrt/openwrt -b openwrt-21.02
 cd openwrt
 ./scripts/feeds update -a
 ./scripts/feeds install -a
-./scripts/feeds install -a
 make menuconfig
 ```
 
