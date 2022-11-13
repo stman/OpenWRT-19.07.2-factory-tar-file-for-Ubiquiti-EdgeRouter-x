@@ -103,6 +103,23 @@ As you can see, there is an **openwrt-ramips-mt7621-ubnt-erx-initramfs-factory.t
 
 Then, update again the router under this temporary OpenWRT 19.07 built with the official stock sysupgrade 19.07.2 bin file from the OpenWRT website, and you're done. 
 
-NEW Update :
+# OpenWRT 21.02 and 22.03 Factory Tar file, generation and installation for Ubiquiti EdgeRouter X
+
+These things where done under Xubuntu 20.04.2 : 
+
+Open a terminal.
+
+Then type the following commands (One of them related to feeds install is doubled because some errors happen on the first launch):
+
+```
+sudo apt-get update
+sudo apt install build-essential clang flex g++ gawk gcc-multilib gettext git libncurses5-dev libssl-dev python3-distutils rsync unzip zlib1g-dev
+git clone https://www.github.com/openwrt/openwrt -b openwrt-21.02
+cd openwrt
+./scripts/feeds update -a
+./scripts/feeds install -a
+./scripts/feeds install -a
+make menuconfig
+```
 
 This procedure doesn't work for OpenWrt 21.02, it works only for 19.07 series. There are some indications posted by another user on the issue tab of this page, to be able to do the build for 21.02 ( Get his menuconfig.txt file to create the build, available here : https://github.com/cyounkins/edgerouter-factory ). I will update this paragraph soon as long as it works for me too with 21.02.
