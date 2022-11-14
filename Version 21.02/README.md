@@ -1,4 +1,4 @@
-# OpenWRT 21.02 and 22.03 Factory Tar file, generation and installation for Ubiquiti EdgeRouter X
+# OpenWRT 21.02 Factory Tar file, generation and installation for Ubiquiti EdgeRouter X
 
 The following procedure is almost the same as the previous one, except that it is more automated, because we provided the **menuconfig.config** file to be loaded into the "make menuconfig" to set all the compilation options correctly before launching the compilation. 
 
@@ -8,7 +8,7 @@ These things where done under a fresh new install of Xubuntu 20.04.2 :
 
 Open a terminal.
 
-Then type the following commands (Change "-b openwrt-21.02" to "-b openwrt-22.03" to compile the 22.03 version):
+Then type the following commands :
 
 ```
 sudo apt-get update
