@@ -107,9 +107,9 @@ Then, update again the router under this temporary OpenWRT 19.07 built with the 
 
 The following procedure is almost the same as the previous one, except that it is more automated, because we provided the **menuconfig.config** file to be loaded into the "make menuconfig" to set all the compilation options correctly before launching the compilation. 
 
-This work is based on the work of @cyounkins who improved my settings to compile the 19.07 version so that it can also work on 21.02 and 22.03 versions, a big thank you to him for his help https://github.com/cyounkins/edgerouter-factory . On his git, you can find his menuconfig.txt file that is a text file with all the options that must set/unset to compile correctly. His file is a human readable file, while the menuconfig.config file I provide, based on his settings, can be directly loaded from "make menuconfig" load option.
+This work is based on the work of **@cyounkins** who improved my settings to compile the **OpenWRT 19.07 version** so that it can also work on **21.02 and 22.03 versions**, a big thank you to him for his help https://github.com/cyounkins/edgerouter-factory . On his git, you can find his **menuconfig.txt** file that is a text file with all the human readable instructions to manually set and unset all the right options to compile correctly this short receipt, while the **menuconfig.config** file I provide, based on his settings, can be directly loaded from **make menuconfig** load option, saving you the 5 minutes necessary to do it manually.
 
-These things where done undera fresh new install of Xubuntu 20.04.2 : 
+These things where done under a fresh new install of Xubuntu 20.04.2 : 
 
 Open a terminal.
 
