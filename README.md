@@ -105,9 +105,11 @@ Then, update again the router under this temporary OpenWRT 19.07 built with the 
 
 # OpenWRT 21.02 and 22.03 Factory Tar file, generation and installation for Ubiquiti EdgeRouter X
 
-The following procedure is still not working, I'm on it, it should work fine soon. I need to contact another folk to finish it.
+The following procedure is almost the same as the previous one, except that it is more automated, because we provided the **menuconfig.config** file to be loaded into the "make menuconfig" to set all the compilation options correctly before launching the compilation. 
 
-These things where done under Xubuntu 20.04.2 : 
+This work is based on the work of @cyounkins who improved my settings to compile the 19.07 version so that it can also work on 21.02 and 22.03 versions, a big thank you to him for his help https://github.com/cyounkins/edgerouter-factory . On his git, you can find his menuconfig.txt file that is a text file with all the options that must set/unset to compile correctly. His file is a human readable file, while the menuconfig.config file I provide, based on his settings, can be directly loaded from "make menuconfig" load option.
+
+These things where done undera fresh new install of Xubuntu 20.04.2 : 
 
 Open a terminal.
 
