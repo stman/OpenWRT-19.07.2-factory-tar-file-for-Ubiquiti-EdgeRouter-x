@@ -1,0 +1,51 @@
+CONFIG_TARGET_ramips=y
+CONFIG_TARGET_ramips_mt7621=y
+CONFIG_TARGET_ramips_mt7621_DEVICE_ubnt_edgerouter-x=y
+# CONFIG_BUSYBOX_DEFAULT_FEATURE_IPV6 is not set
+CONFIG_CLEAN_IPKG=y
+# CONFIG_IPV6 is not set
+# CONFIG_KERNEL_CC_OPTIMIZE_FOR_PERFORMANCE is not set
+CONFIG_KERNEL_CC_OPTIMIZE_FOR_SIZE=y
+# CONFIG_KERNEL_CGROUPS is not set
+# CONFIG_KERNEL_CRASHLOG is not set
+# CONFIG_KERNEL_DEBUG_FS is not set
+# CONFIG_KERNEL_DEBUG_INFO is not set
+# CONFIG_KERNEL_DEBUG_KERNEL is not set
+# CONFIG_KERNEL_DEVPTS_MULTIPLE_INSTANCES is not set
+# CONFIG_KERNEL_ELF_CORE is not set
+# CONFIG_KERNEL_IPV6 is not set
+# CONFIG_KERNEL_IP_MROUTE is not set
+# CONFIG_KERNEL_KALLSYMS is not set
+# CONFIG_KERNEL_NAMESPACES is not set
+# CONFIG_KERNEL_POSIX_MQUEUE is not set
+# CONFIG_KERNEL_PRINTK is not set
+# CONFIG_KERNEL_PRINTK_TIME is not set
+# CONFIG_KERNEL_SECCOMP is not set
+# CONFIG_KERNEL_SWAP is not set
+# CONFIG_PACKAGE_ca-bundle is not set
+# CONFIG_PACKAGE_dnsmasq is not set
+# CONFIG_PACKAGE_firewall is not set
+# CONFIG_PACKAGE_iptables is not set
+# CONFIG_PACKAGE_iwinfo is not set
+# CONFIG_PACKAGE_kmod-ipt-conntrack is not set
+# CONFIG_PACKAGE_kmod-ipt-core is not set
+# CONFIG_PACKAGE_kmod-ipt-nat is not set
+# CONFIG_PACKAGE_kmod-ipt-offload is not set
+# CONFIG_PACKAGE_kmod-nf-conntrack is not set
+# CONFIG_PACKAGE_kmod-nf-flow is not set
+# CONFIG_PACKAGE_kmod-nf-ipt is not set
+# CONFIG_PACKAGE_kmod-nf-ipt6 is not set
+# CONFIG_PACKAGE_kmod-nf-nat is not set
+# CONFIG_PACKAGE_kmod-nf-reject is not set
+# CONFIG_PACKAGE_kmod-ppp is not set
+# CONFIG_PACKAGE_libip4tc is not set
+# CONFIG_PACKAGE_libip6tc is not set
+# CONFIG_PACKAGE_libxtables is not set
+# CONFIG_PACKAGE_opkg is not set
+# CONFIG_PACKAGE_ppp is not set
+CONFIG_STRIP_KERNEL_EXPORTS=y
+CONFIG_USE_MKLIBS=y
+CONFIG_PACKAGE_kmod-lib-crc-ccitt=y
+CONFIG_PACKAGE_libiwinfo=y
+CONFIG_PACKAGE_libiwinfo-data=y
+CONFIG_PACKAGE_libpthread=y
