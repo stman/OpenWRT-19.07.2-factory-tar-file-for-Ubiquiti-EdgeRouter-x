@@ -150,19 +150,19 @@ ls -al
 And you should see the following files : 
 
 ```
-user@PC:~/openwrt/bin/targets/ramips/mt7621$ ls -al
-total 8684
-drwxr-xr-x 3 user user    4096 mai   18 14:01 .
-drwxr-xr-x 3 user user    4096 mai   18 13:55 ..
--rw-r--r-- 1 user user     335 mai   18 13:55 config.buildinfo
--rw-r--r-- 1 user user     263 mai   18 13:55 feeds.buildinfo
--rw-r--r-- 1 user user    1880 mai   18 14:01 openwrt-ramips-mt7621-device-ubnt-erx.manifest
--rw-r--r-- 1 user user 2938880 mai   18 14:01 openwrt-ramips-mt7621-ubnt-erx-initramfs-factory.tar
--rw-r--r-- 1 user user 2923299 mai   18 14:01 openwrt-ramips-mt7621-ubnt-erx-initramfs-kernel.bin
--rw-r--r-- 1 user user 2990868 mai   18 14:01 openwrt-ramips-mt7621-ubnt-erx-squashfs-sysupgrade.bin
-drwxr-xr-x 2 user user    4096 mai   18 14:01 packages
--rw-r--r-- 1 user user     720 mai   18 14:01 sha256sums
--rw-r--r-- 1 user user      18 mai   18 13:55 version.buildinfo
+ThinkPad-T400:~/openwrt/bin/targets/ramips/mt7621$ ls -al
+total 8172
+drwxr-xr-x 3 fjouvin fjouvin    4096 nov.  14 11:40 .
+drwxr-xr-x 3 fjouvin fjouvin    4096 nov.  14 11:19 ..
+-rw-r--r-- 1 fjouvin fjouvin    1888 nov.  14 11:19 config.buildinfo
+-rw-r--r-- 1 fjouvin fjouvin     288 nov.  14 11:19 feeds.buildinfo
+-rw-r--r-- 1 fjouvin fjouvin 2764800 nov.  14 11:40 openwrt-ramips-mt7621-ubnt_edgerouter-x-initramfs-factory.tar
+-rw-r--r-- 1 fjouvin fjouvin 2748428 nov.  14 11:40 openwrt-ramips-mt7621-ubnt_edgerouter-x-initramfs-kernel.bin
+-rw-r--r-- 1 fjouvin fjouvin    1317 nov.  14 11:40 openwrt-ramips-mt7621-ubnt_edgerouter-x.manifest
+-rw-r--r-- 1 fjouvin fjouvin 2817159 nov.  14 11:40 openwrt-ramips-mt7621-ubnt_edgerouter-x-squashfs-sysupgrade.bin
+drwxr-xr-x 2 fjouvin fjouvin    4096 nov.  14 11:40 packages
+-rw-r--r-- 1 fjouvin fjouvin     749 nov.  14 11:40 sha256sums
+-rw-r--r-- 1 fjouvin fjouvin      18 nov.  14 11:19 version.buildinfo
 ```
 
 As you can see, there is an **openwrt-ramips-mt7621-ubnt-erx-initramfs-factory.tar** that was generated. Use this file to update your router from EdgeOS with usual procedures.
