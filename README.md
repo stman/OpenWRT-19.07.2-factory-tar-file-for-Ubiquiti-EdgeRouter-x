@@ -120,11 +120,11 @@ git clone https://www.github.com/openwrt/openwrt -b openwrt-21.02
 cd openwrt
 ./scripts/feeds update -a
 ./scripts/feeds install -a
-wget https://raw.githubusercontent.com/stman/OpenWRT-19.07.2-factory-tar-file-for-Ubiquiti-EdgeRouter-x/master/menuconfig.txt
+wget https://raw.githubusercontent.com/stman/OpenWRT-19.07.2-factory-tar-file-for-Ubiquiti-EdgeRouter-x/master/menuconfig.config
 make menuconfig
 ```
 
-Then use the arrow to move selection to **Load** in order to load the EdgeRouter configuration file for the build : Enter the filename **menuconfig.txt** then select OK.
+Then use the arrow to move selection to **Load** in order to load the EdgeRouter X configuration file for the build OpenWRT-21.02 : Enter the filename **menuconfig.config** then select OK.
 
 Now select the **Save** option and choose **.config** as save filename, click OK, then select Exit.
 Select Exit again to get out of the menuconfig utility, we are now ready to compile the whole source code by entering the following commands into the bash shell :
